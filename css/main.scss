@@ -1,0 +1,100 @@
+@import "normalize";
+@import "grdd";
+
+/* Settings */
+
+$color-light-pink: #FFC8C8;
+$color-pink: #FF9999;
+$color-grey: #444F5A;
+
+$size-xs: 1em;
+$size-sm: 2em;
+$size-md: 4.5em;
+
+/* Base */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-grey;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited,
+a:link {
+  color: $color-light-pink;
+  text-decoration: none;
+  transition: color ease-in-out .2s;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: $color-pink;
+}
+
+/* Components */
+
+.c-header {
+
+  .c-header__logo {
+    width: auto;
+    height: 5em;
+  }
+}
+
+.c-island {
+  background-color: $color-pink;
+  transition: background-color ease-in-out .2s;
+  margin-bottom: $grdd-gutter;
+
+  &:hover {
+    background-color: darken($color-pink, 4%);
+  }
+}
+
+.c-container {
+  max-width: 75.625em;
+  padding: 0 0.625em;
+}
+
+/* Utilities */
+
+.u-align-c {
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.u-text-c     { text-align: center; }
+.u-text-pink  { color: $color-pink; }
+.u-text-md    { font-size: 1.25em; }
+
+.u-p-sm   { padding: $size-sm; }
+.u-p-md   { padding: $size-md; }
+.u-pb-md  { padding-bottom: $size-md; }
+
+.u-mb-xs  { margin-bottom: $size-xs; }
+
+/* Responsive setup */
+
+@media (max-width: 28.75em) { /* < 460px */
+
+  .c-header .c-header__logo {
+    height: 3em;
+  }
+  
+  .u-text-md      { font-size: 1em; }
+
+  .u-p-md   { padding: 3em; }
+  .u-pb-md  { padding-bottom: 3em; }
+
+}

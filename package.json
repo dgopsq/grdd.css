@@ -1,0 +1,14 @@
+{
+  "name": "grdd-website",
+  "version": "1.0.0",
+  "description": "Website for grdd",
+  "author": "diegopq",
+  "license": "MIT",
+
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-cssnano": "*",
+    "gulp-rename": "*"
+  }
+}
