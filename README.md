@@ -1,26 +1,26 @@
-#grdd.css
+# grdd.css
 A lightweight [SASS](http://sass-lang.com/) grid built using [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) (by [Harry Roberts](https://twitter.com/csswizardry)), [OOCSS](http://oocss.org/) and a lot of love ❤
 
-##Disclaimer
+## Disclaimer
 
-I built this grid *just for fun*, I know there are many others (maybe too many) better than *grdd*.
+I built this grid *just for fun*, I know there are many others (maybe too many) which are better than *grdd*.
 I really wanted to use [PostCSS](https://github.com/postcss) but I thought that [SASS](http://sass-lang.com/) would provide a better environment.
 
-##Specs
+## Specs
 
 * *grdd* weights **1.810 bytes** with one breakpoint
-* *grdd* **uses inline-block** just because is fully supported from any browser
+* *grdd* **uses inline-block** just because it is fully supported from any browser
 * *grdd* has **6 columns**
 * *grdd* **uses fractions**: `.grdd__item--1/2`
 * *grdd* uses **@ for breakpoints**: `.grdd__item--1/1@sm`
 * *grdd* is **infinitely nestable**
-* *grdd* **respects BEM** naming convention
-* *grdd* **respects OOCSS** philosophy
-* *grdd* is written in only **60 lines of SASS**, including *comments* and *extra spaces*
+* *grdd* **respects the BEM** naming convention
+* *grdd* **respects the OOCSS** philosophy
+* *grdd* is only **60 lines of SASS**, including *comments* and *extra spaces*
 
-##Features
+## Features
 
-You can customize *grdd* changing the variables in the top lines and recompiling it.
+You can customize *grdd* by changing the variables in the top lines and recompiling it.
 *grdd* uses [Gulp](http://gulpjs.com/), so the only thing you have to do in order to recompile it is:
 ```
 $ cd grdd.css/
@@ -42,7 +42,7 @@ $grdd-gutter: 0; // No gutter
 ```
 
 ### Sizes
-Probably you don't want the default sizes (`.grdd__item--1/2, ...`) because you already have a list of sizes in your own project. Turning `$grdd-sizes` to `false` allows you to have only the *grdd* component without all the fractions, saving a lot of space.
+You probably don't want the default sizes (`.grdd__item--1/2, ...`) because you already have a list of sizes in your own project. Turning `$grdd-sizes` to `false` allows you to have just the *grdd* component without all the fractions, thus saving a lot of space.
 ```SASS
 $grdd-sizes: false; // No fractions
 ```
@@ -64,8 +64,8 @@ $grdd-breakpoints: (
   --><div class="c-grdd__item c-grdd__item--1/2 c-grdd__item--1/1@sm"></div>
 </div>
 ```
-This grid has two 50% columns by default, and two 100% columns when the viewport will be < 48em.
-Remember to add a comment from the end of each *grid__item* to the start of the next one, this because *grdd* uses [inline-block](https://css-tricks.com/fighting-the-space-between-inline-block-elements/).
+This grid has two 50% columns by default, and two 100% columns when the viewport is < 48em.
+Remember to add a comment from the end of each *grid__item* to the start of the next one, this is because *grdd* uses [inline-block](https://css-tricks.com/fighting-the-space-between-inline-block-elements/).
 
 ## License
 The MIT License (MIT)
