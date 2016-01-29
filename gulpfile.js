@@ -4,10 +4,6 @@ var gulp    = require('gulp'),
     rename  = require('gulp-rename');
 
 gulp.task('compile', function() {
-  var modules = [
-    require('postcss-simple-vars')
-  ];
-
   return gulp.src('grdd.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(nano({discardComments: {removeAllButFirst: true}}))
