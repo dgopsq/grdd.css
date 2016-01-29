@@ -8,7 +8,7 @@ I really wanted to use [PostCSS](https://github.com/postcss) but I thought that 
 
 ## Specs
 
-* *grdd* weights **1.810 bytes** with one breakpoint
+* *grdd* weights **1.823 bytes** with one breakpoint
 * *grdd* **uses inline-block** just because it is fully supported from any browser
 * *grdd* has **6 columns**
 * *grdd* **uses fractions**: `.grdd__item--1/2`

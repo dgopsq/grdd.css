@@ -20,7 +20,6 @@ $grdd-breakpoints: (
 
 @mixin _protoSizes($selector, $media) {
   $media: if($media=="", "", "\\@#{$media}");
-
   #{$selector}--1\/1#{$media} { width: 100%; }
   #{$selector}--3\/6#{$media},
   #{$selector}--2\/4#{$media},
@@ -45,7 +44,8 @@ $grdd-breakpoints: (
 
   & > .#{$grdd-namespace}grdd__item {
     display: inline-block;
-    padding: 0 0 $grdd-gutter $grdd-gutter;
+    padding-left: $grdd-gutter;
+    vertical-align: top;
     
     @if $grdd-sizes {
       @include _protoSizes("&.#{$grdd-namespace}grdd__item", "");
