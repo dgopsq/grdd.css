@@ -4,7 +4,6 @@ A lightweight [SASS](http://sass-lang.com/) grid built using [BEMIT](http://cssw
 ## Disclaimer
 
 I built this grid *just for fun*, I know there are many others (maybe too many) which are better than *grdd*.
-I really wanted to use [PostCSS](https://github.com/postcss) but I thought that [SASS](http://sass-lang.com/) would provide a better environment.
 
 ## Specs
 
